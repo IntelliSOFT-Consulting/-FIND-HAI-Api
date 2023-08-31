@@ -40,9 +40,4 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.FOUND).body(patientService.fetchPatientDetails(patientID));
     }
 
-
-
-
-
-
 }

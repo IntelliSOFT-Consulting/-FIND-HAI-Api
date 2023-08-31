@@ -1,8 +1,10 @@
 package com.intellisoft.findhai.controller;
 
 
-import com.intellisoft.findhai.controller.dto.PatientRegistrationRespDto;
-import com.intellisoft.findhai.entity.*;
+import com.intellisoft.findhai.entity.Outcome;
+import com.intellisoft.findhai.entity.PeriOperative;
+import com.intellisoft.findhai.entity.PostOperative;
+import com.intellisoft.findhai.entity.SurgicalSitePathogenInfo;
 import com.intellisoft.findhai.service.EncounterService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

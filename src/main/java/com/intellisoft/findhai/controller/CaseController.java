@@ -35,4 +35,10 @@ public class CaseController {
         return ResponseEntity.status(HttpStatus.FOUND).body(caseService.fetchCases());
     }
 
+    @GetMapping(path = "/details/{patientID}")
+    public ResponseEntity<List<MedicalCase>> fetchCaseDetails(String patientID) {
+        return ResponseEntity.status(HttpStatus.FOUND).body(caseService.fetchCaseDetails(patientID));
+    }
+
+
 }

@@ -40,4 +40,17 @@ public class CaseServiceImpl implements CaseService{
     public List<MedicalCase> fetchCases() {
         return caseRepository.findAll();
     }
+
+    @Override
+    public List<MedicalCase> fetchCaseDetails(String patientID) {
+
+        Optional<MedicalCase> optionCase = caseRepository.findByPatientID(patientID);
+        if (optionCase.isPresent()) {
+
+            return (List<MedicalCase>) optionCase.get();
+
+        } else {
+            throw new EntityNotFoundException("Cases for Patient ID " + patientID + " not found");
+        }
+    }
 }

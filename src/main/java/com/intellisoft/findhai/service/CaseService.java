@@ -8,4 +8,6 @@ public interface CaseService {
     MedicalCase addCase(MedicalCase patientMedicalCase, String patientID);
 
     List<MedicalCase> fetchCases();
+
+    List<MedicalCase> fetchCaseDetails(String patientID);
 }
