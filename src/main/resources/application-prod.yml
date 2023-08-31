@@ -1,6 +1,5 @@
 spring:
   datasource:
-#    url: jdbc:postgresql://localhost:5432/find_hai
     url: jdbc:postgresql://172.105.109.16:5433/find_hai
     username: postgres
     password: findhai
