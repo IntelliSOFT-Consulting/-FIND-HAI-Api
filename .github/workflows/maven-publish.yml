@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - dev/kimaiga
+      - nelsonkimaiga-patch-1
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
@@ -17,8 +18,8 @@ env:
   SSH_PASS: ${{ secrets.SSH_PRIVATE_KEY }}
   SSH_HOST: ${{ secrets.SSH_HOST }}
   SSH_USER: ${{ secrets.SSH_USER }}
-  CONTAINER_NAME: icl_llm
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/icl_llm:v3
+  CONTAINER_NAME: icl_findhai
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/icl_findhai:v1
 
 jobs:
   build:
